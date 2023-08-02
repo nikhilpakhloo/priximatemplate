@@ -75,6 +75,35 @@ nav {
 .navleft span {
   color: orangered;
 }
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-menu ul li {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
 .navright {
   width: 50%;
   display: flex;
@@ -180,7 +209,6 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin: auto;
 }
 
 .content1 {
@@ -189,10 +217,13 @@ nav {
   justify-content: space-evenly;
   margin: auto;
   color: white;
+  gap: 60px;
+  flex-wrap: wrap;
 }
 .vertical-text {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 /* services */
 
@@ -257,33 +288,15 @@ nav {
   text-align: left;
 }
 /* team */
-.team {
-  width: 100%;
-  margin: auto;
-  background-color: white;
-  height: 500px;
-  text-align: center;
-  align-items: center;
-  margin-top: 20px;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fill, 300px);
-}
-.upper-team {
-  width: 30%;
-  margin: auto;
-  margin-top: 50px;
-}
-.member1 {
-  display: block;
 
-  grid-template-columns: repeat(auto-fill, 300px);
+.teamdiv{
+  padding-top: 3%;
 }
-.members {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
+.members{
+  width: 70%;
+  border: solid white 2px;
+  padding-top: 3%;
+  padding-bottom:5%;
 }
 /* testimonial */
 .testimonial {
@@ -342,21 +355,20 @@ nav {
 }
 .card-container1 {
   width: 100%;
-  margin: auto;
-  display: grid;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fill, 500px);
 
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fill, 400px); */
   grid-gap: 15px;
-  padding: 20px;
 
   justify-content: center;
 }
 
 .card_item1 {
+  width: 400px;
   background-color: #fff;
   border-radius: 8px;
-  padding: 20px;
+
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -365,6 +377,10 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
+  object-fit: cover;
+  width: 100%;
+  height: 550px;
+  overflow: hidden;
 }
 .card_inner1 img {
   width: 450px;
@@ -372,6 +388,10 @@ nav {
 }
 .card_inner1 span {
   color: orangered;
+}
+.cardcaption {
+  text-align: left;
+  margin-top: 80px;
 }
 
 footer {
@@ -384,7 +404,8 @@ footer {
   background-image: linear-gradient(rgba(5, 5, 68, 0.3), rgba(0, 0, 255, 0.3)),
     url(bg_banner1.jpg);
   align-items: end;
-  margin: auto;
+  /* margin: auto; */
+  margin-top: 150px;
   flex-wrap: wrap;
   justify-content: center;
   color: white;
@@ -406,5 +427,27 @@ footer {
 @media (max-width: 800px) {
   .crousalpara {
     display: none;
+  }
+}
+
+/* Media Query for Responsive Navigation */
+@media (max-width: 1000px) {
+  .navright ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    z-index: 5;
+    top: 70px;
+    right: 0;
+    background-color: orangered;
+    width: 30%;
   }
 }

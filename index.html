@@ -52,6 +52,29 @@
         <div class="navleft">
           <h2>Prixima<span>.</span></h2>
         </div>
+
+        <!--hamburger-->
+        <div class="hamburger" onclick="myFunction">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="mobile-menu">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Portfolio</li>
+            <li>Team</li>
+            <li>Review</li>
+            <li>Blog</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <script>
+         
+        </script>
+
         <div class="navright">
           <ul>
             <li>Home</li>
@@ -124,11 +147,11 @@
     </div>
 
     <script>
-      // $(document).ready(function () {
-      //   setInterval(function () {
-      //     $(".carousel").carousel("next");
-      //   }, 3000);
-      // });
+      $(document).ready(function () {
+        setInterval(function () {
+          $(".carousel").carousel("next");
+        }, 3000);
+      });
     </script>
     <!-- marketing-->
 
@@ -356,33 +379,45 @@
     </div>
     <!--team-->
     <div class="team">
-      <div class="upper-team">
-        <h1>Team Members</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-          voluptatibus deserunt corrupti molestiae reiciendis eveniet ipsam
-          explicabo veritatis nihil cum, expedita beatae sunt ab magni. Dolorum
-          ex voluptatibus quidem animi.
-        </p>
-      </div>
-    </div>
-    <div class="members">
-      <div class="member1">
-        <img src="team_1.jpg" alt="" />
-        <h3>Marwin mcKenny</h3>
-        <p>Marketing coordinator</p>
-      </div>
-      <div class="member1">
-        <img src="team_2.jpg" alt="" />
-        <h3>Kathryn Murphy</h3>
-        <p>Marketing coordinator</p>
-      </div>
-      <div class="member1x">
-        <img src="team_3.jpg" alt="" />
-        <h3>Darell Steward</h3>
-        <p>Marketing coordinator</p>
-      </div>
-    </div>
+			<div class="teamdiv text-center">
+				<a name="team"><p class="textorg">TEAM</p></a>
+				<h3 class="card-title cardhead">Team Members</h3>
+				<p class="worktext">Contrary to popular belief, Lorem Ipsum is not simply random text. It has<br>
+					roots in a piece of classical Latin litrature from 45 BC, making it over<br> 2000 years old</p>	
+			</div>
+			<div class="row row-cols-1 row-cols-md-3 g-4 mx-auto members">
+				<div class="col">
+					<div class="card h-100 brd">
+						<img src="team_1.jpg" class="card-img-top" alt="...">
+						<div class="card-body text-center">
+							<a name="reviews"><h5 class="card-title">Marvin McKinney</h5></a>
+							<small class="card-text">Market Coordinator</small>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 brd">
+						<img src="team_2.jpg" class="card-img-top" alt="...">
+						<div class="card-body text-center">
+							<h5 class="card-title">Kathryn Murphy</h5>
+							<small class="card-text">Ethical Hacker</small>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100 brd">
+						<img src="team_3.jpg" class="card-img-top" alt="...">
+						<div class="card-body text-center">
+							<h5 class="card-title">Darrell Steward</h5>
+							<small class="card-text">Software Developer </small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+      
+
     <!--testimonial-->
     <div class="testimonial">
       <img src="team_3.jpg" alt="" />
@@ -395,52 +430,53 @@
         nobis tempora. Eius iure nihil repellendus nesciunt dicta impedit!
       </div>
     </div>
+    
     <!--Blog-->
     <div class="blog">
-      <h5>Blog</h5>
-      <h2>Blog posts</h2>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti<br />
-        minima corrupti, ab incidunt laboriosam delectus,<br />
-        illum rerum aliquid, expedita quasi eos praesentium ipsa quos dicta?
-      </p>
-    </div>
+			<div class="teamdiv text-center">
+				<a name="blog"><p class="textorg">BLOG</p></a>
+				<h3 class="card-title cardhead">Blog Posted</h3>
+				<p class="worktext">Contrary to popular belief, Lorem Ipsum is not simply random text. It has<br>
+					roots in a piece of classical Latin litrature from 45 BC, making it over<br> 2000 years old
+				</p>	
+			</div>
+			<div class="row row-cols-1 row-cols-md-3 g-4 mx-auto members">
+				<div class="col blogcontent mx-auto">
+					<div class="card h-100 ">
+						<span class="badge badge1">Web Designing</span>
+						<img src="project5.jpg" class="card-img-top" alt="...">
+						<div class="card-body text-left p-4">
+							<p class="card-text "><small class="textorg">01 DEC,2022</small></p>
+							<h4 class="card-title">Web Design trends in 2022</h4>
+							<p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>	
+						</div>
+					</div>
+				</div>
 
-    <div class="card-container1">
-      <div class="card_item1">
-        <div class="card_inner1">
-          <img src="project5.jpg" alt="" />
-          <span> 1 Dec 2022 </span>
-          <h3>Web design trend in 2022</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dignissimos neque magni accusantium ex, tenetur debitis?
-          </p>
-        </div>
-      </div>
-      <div class="card_item1">
-        <div class="card_inner1">
-          <img src="project4.jpg" alt="" />
-          <span> 1 Dec 2022 </span>
-          <h3>Web design trend in 2022</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dignissimos neque magni accusantium ex, tenetur debitis?
-          </p>
-        </div>
-      </div>
-      <div class="card_item1">
-        <div class="card_inner1">
-          <img src="project1.jpg" alt="" />
-          <span> 1 Dec 2022 </span>
-          <h3>Web design trend in 2022</h3>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-            Dignissimos neque magni accusantium ex, tenetur debitis?
-          </p>
-        </div>
-      </div>
-    </div>
+				<div class="col blogcontent mx-auto">
+					<div class="card h-100">
+						<span class="badge  badge1">Programing</span>
+						<img src="project4.jpg" class="card-img-top" alt="...">
+						<div class="card-body text-left p-4">
+							<p class="card-text orgtext"><small class="textorg">01 DEC,2022</small></p>
+							<h4 class="card-title">Web Design trends in 2022</h4>
+							<p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>	
+						</div>
+					</div>
+				</div>
+				<div class="col blogcontent mx-auto">
+					<div class="card h-100">
+						<span class="badge badge1">Marketing</span>
+						<img src="project2.jpg" class="card-img-top" alt="...">
+						<div class="card-body text-left p-4">
+							<p class="card-text orgtext"><small class="textorg">01 DEC,2022</small></p>
+							<h4 class="card-title">Web Design trends in 2022</h4>
+							<p class="card-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>	
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
     <footer>
       <div class="footer">
